@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="16dp"
 
-    tools:context=".Req01">
+    tools:context=".BlockPredeterminada">
 
     <ImageView
         android:layout_width="90dp"
