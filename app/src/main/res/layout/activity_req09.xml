@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Req09">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu número sera siempre confidencial"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="486dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="364dp"
+        android:layout_height="60dp"
+        android:text="Tomate tu tiempo para revisar a contiuacion los puntos clave de nuestra politica de privacidad y nuestros terminos de servicio"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Los datos que usamos"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="192dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Como usamos tus datos"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="249dp"
+        android:layout_height="45dp"
+        android:text="Te asesoraremos sobre como usar Block correctamente"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="314dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="256dp"
+        android:layout_height="47dp"
+        android:text="¿Permisos innesesarios? Nunca los pedimos"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="394dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="318dp"
+        android:layout_height="56dp"
+        android:text="Al hacer click en aceptar y cotinuar estas aceptando nuestra politica de privacidad y nuestros terminos de servicio"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="566dp" />
+
+    <TextView
+        android:id="@+id/tv_tituloreq09"
+        android:layout_width="381dp"
+        android:layout_height="69dp"
+        android:text="Tu privacidad es importate para nosotros"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/verde_claro"
+        android:text="ACEPTAR Y CONTINUAR"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="646dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/datos01"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/datos02"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/perfil"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/app"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/appblock"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/ic_security"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="576dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

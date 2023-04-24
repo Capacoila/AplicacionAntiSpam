@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Req08">
+
+    <TextView
+        android:id="@+id/tv_tituloreq08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ESCRIBE TU NÚMERO DE TELÉFONO"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/tv_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Block te llamará para verificar tu número de teléfono."
+        android:layout_below="@+id/tv_titulo"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_marginBottom="32dp" />
+
+
+    <Spinner
+        android:id="@+id/sp_pais"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/tv_descripcion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/paises" />
+
+    <TextView
+        android:id="@+id/tv_numero_telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número de teléfono:"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_below="@+id/sp_pais"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/et_numero_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su número de teléfono aquí"
+        android:layout_below="@+id/tv_numero_telefono"
+        android:layout_marginTop="8dp"
+        android:inputType="phone"
+        android:minHeight="48dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="392dp"
+        android:layout_height="270dp"
+        android:layout_below="@id/et_numero_telefono"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/style1"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="187dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:onClick="onNoPermitirClick"
+                android:padding="16sp"
+                android:text="Cancelar"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onPermitirClick"
+                android:padding="12dp"
+                android:text="Continuar"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewMensaje3"
+            android:layout_width="314dp"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="Te estamos llamando..."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="-14dp" />
+
+        <TextView
+            android:id="@+id/textViewMensaje2"
+            android:layout_width="314dp"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="No contestes Block hará la verificacion..."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="37dp" />
+
+        <TextView
+            android:id="@+id/textViewMensaje4"
+            android:layout_width="314dp"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="VERIFICADO"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="93dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_confirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar mi número"
+        android:layout_below="@+id/et_numero_telefono"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/verde_claro"
+        android:textColor="@color/black"
+        android:layout_marginTop="360dp"
+
+        />
+
+</RelativeLayout>
