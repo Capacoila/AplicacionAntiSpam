@@ -9,6 +9,6 @@ public class Req07 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_req07);
+        setContentView(R.layout.activity_confirmarnumero);
     }
 }
