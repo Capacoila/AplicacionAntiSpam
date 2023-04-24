@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AplicacionAntiSpam"
         tools:targetApi="31">
         <activity
+            android:name=".Req01"
+            android:exported="false" />
+        <activity
             android:name=".PedirNumero"
             android:exported="false" />
         <activity
