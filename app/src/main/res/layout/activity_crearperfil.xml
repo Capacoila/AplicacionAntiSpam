@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".crearperfil">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="249dp">
+
+        <ImageView
+            android:id="@+id/imageView0"
+            android:layout_width="99dp"
+            android:layout_height="114dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/anadir" />
+
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView0"
+            android:layout_centerInParent="true"
+            android:text="Cree su perfil"
+            android:textColor="#919298"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="380dp"
+        android:layout_height="66dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/relativeLayout0"
+        android:background="#7584D8">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="GOOGLE"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="84dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="53dp"
+            android:layout_toLeftOf="@id/textView1"
+            android:src="@drawable/google" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="380dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:background="#FFFFFF"
+        android:layout_below="@id/relativeLayout1"
+        >
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="380dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/relativeLayout4"
+        android:layout_centerInParent="true"
+        android:background="#3F51B5">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="FACEBOOK"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="84dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="53dp"
+            android:layout_toLeftOf="@id/textView2"
+            android:src="@drawable/facebook" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="380dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:background="#FFFFFF"
+        android:layout_below="@id/relativeLayout2"
+        >
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="380dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/relativeLayout5"
+        android:layout_centerInParent="true"
+        android:background="#9A9FB8">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="          INTRODUCE DATOS MANUALMENTE"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="106dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="-48dp"
+            android:layout_toLeftOf="@id/textView3"
+            android:src="@drawable/usuario" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
