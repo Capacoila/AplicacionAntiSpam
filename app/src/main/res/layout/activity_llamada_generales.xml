@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LlamadaGenerales">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/relativeLayoutBuscar">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutBarraBusqueda"
+            android:layout_width="380dp"
+            android:layout_height="66dp"
+
+            android:layout_centerInParent="true">
+
+            <EditText
+                android:id="@+id/textBuscar"
+                android:layout_width="186dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:hint="Buscar" />
+
+            <ImageView
+                android:id="@+id/imagePerfilAzul"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginRight="7dp"
+
+                android:src="@drawable/usuariodeperfil_azul" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@id/relativeLayoutBuscar">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp">
+
+            <TextView
+                android:id="@+id/textFrecuentes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ContactosFrecuentes\n">
+
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/imageFrecuente01"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textFrecuentes"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="7dp"
+                android:src="@drawable/usuariodeperfil_azul" />
+
+            <ImageView
+                android:id="@+id/imageFrecuente02"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textFrecuentes"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="169dp"
+                android:layout_marginLeft="63dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="7dp"
+                android:layout_toRightOf="@id/imageFrecuente01"
+                android:src="@drawable/usuariodeperfil_azul" />
+
+            <ImageView
+                android:id="@+id/imageFrecuente03"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textFrecuentes"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="304dp"
+                android:layout_marginLeft="63dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="7dp"
+                android:layout_toRightOf="@id/imageFrecuente02"
+                android:src="@drawable/usuariodeperfil_azul" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

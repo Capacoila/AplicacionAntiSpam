@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CopiaSeguridad"
+    android:layout_margin="15dp">
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageCloud"
+        android:layout_width="154dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/textView13"
+        android:layout_marginTop="62dp"
+        app:srcCompat="@drawable/nube"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textActivar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageCloud"
+        android:layout_marginTop="49dp"
+        android:text="Activar Copia de Seguridad de Block"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textCambiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textActivar"
+        android:layout_marginTop="38dp"
+        android:gravity="center"
+        android:text="Puedes cambiar esta opcion en cualquier \nmomento desde Configuracion"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textCopias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textCambiar"
+        android:layout_marginTop="30dp"
+        android:text="Haz copias de seguridad automatica del \nhistorial de llamadas, contactos y \nlistas de mensajes"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonHacerCopia"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textCopias"
+        android:layout_marginTop="99dp"
+        android:text="Hacer Copia de Seguridad"
+        android:backgroundTint="#BEBEBE"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Mas Tarde"
+        android:backgroundTint="@color/white"
+        android:textColor="#5C7DA9"
+        android:layout_below="@id/buttonHacerCopia"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

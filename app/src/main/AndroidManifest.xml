@@ -12,70 +12,80 @@
         android:theme="@style/Theme.AplicacionAntiSpam"
         tools:targetApi="31">
         <activity
+            android:name=".ListaPermisos"
+            android:exported="true" />
+        <activity
+            android:name=".LlamadaGenerales"
+            android:exported="true" />
+        <activity
+            android:name=".CopiaSeguridad"
+            android:exported="true" />
+        <activity
             android:name=".Crearperfilfacebook"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Crearperfilgoogle"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".NumeroConfidencial"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".PermisosInnesesarios"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".AsesoramientoBlock"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ComoUsoDatos"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".UsodeDatos"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Comenzar"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".SplashBienvenida"
-            android:exported="false" />
-        <activity
-            android:name=".registrardatos"
-            android:exported="false" />
-        <activity
-            android:name=".crearperfil"
-            android:exported="false" />
-        <activity
-            android:name=".Req09"
-            android:exported="false" />
-        <activity
-            android:name=".Req08"
-            android:exported="false" />
-        <activity
-            android:name=".Req07"
-            android:exported="false" />
-        <activity
-            android:name=".Req01"
-            android:exported="false" />
-        <activity
-            android:name=".PedirNumero"
-            android:exported="false" />
-        <activity
-            android:name=".permisomensajes"
-            android:exported="false" />
-        <activity
-            android:name=".permisocontactos"
-            android:exported="false" />
-        <activity
-            android:name=".permisollamadas"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Crearperfilmanualmente"
+            android:exported="true" />
+        <activity
+            android:name=".crearperfil"
+            android:exported="true" />
+        <activity
+            android:name=".numeroverificado"
+            android:exported="true" />
+        <activity
+            android:name=".PedirNumero"
+            android:exported="true" />
+        <activity
+            android:name=".confirmarnumero"
+            android:exported="true" />
+        <activity
+            android:name=".BlockPredeterminada"
+            android:exported="true" />
+
+        <activity
+            android:name=".permisomensajes"
+            android:exported="true" />
+        <activity
+            android:name=".permisocontactos"
+            android:exported="true" />
+        <activity
+            android:name=".permisollamadas"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
         </activity>
     </application>
 
