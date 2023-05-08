@@ -64,7 +64,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:layout_margin_top="7dp"
             android:background="@drawable/style1"
             android:orientation="vertical"
             android:padding="16dp">
@@ -84,13 +83,6 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
-
-            <ImageView
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="16dp"
-                android:src="@drawable/blockspam1" />
 
 
             <LinearLayout
