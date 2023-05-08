@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComoUsoDatos"
+    android:layout_margin="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/Relative01">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Tu número sera siempre confidencial para nosotros"
+            android:textSize="20dp"
+
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="486dp"
+            android:textColor="#03A9F4"/>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="364dp"
+            android:layout_height="60dp"
+            android:text="Tomate tu tiempo para revisar a contiuacion los puntos clave de nuestra politica de privacidad y nuestros terminos de servicio"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="79dp"
+            android:layout_below="@id/textView"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Relative01"
+        android:layout_margin="15dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="380dp"
+            android:layout_height="66dp"
+
+            >
+
+            <TextView
+                android:id="@+id/txtView01"
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Como usamos tus datos"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="79dp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginRight="7dp"
+                android:layout_toLeftOf="@id/txtView01"
+                android:src="@drawable/datos02" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtView02"
+            android:layout_width="match_parent"
+            android:layout_height="373dp"
+
+            android:layout_below="@id/relativeLayout1"
+            android:text="La privacidad forma parte integral de nuestra cultura y procesos en Block. Evaluamos continuamente las implicaciones de privacidad de todas nuestras funciones. Sus datos sólo se utilizan para los fines establecidos en nuestra Política de Privacidad, incluyendo:  \n- Mostrar datos de perfil cuando otro usuario busca su número (para un número limitado de búsquedas para mantener su información segura). \n- Proporcionar, mejorar, analizar y personalizar nuestros servicios para garantizar que tenga una experiencia positiva en nuestra aplicación.  \n- Cumplir la legislación local y proteger sus derechos.  \n- Crear informes utilizando datos agregados y anónimos con fines estadísticos y analíticos para mejorar nuestros servicios. Solo recopilamos la información necesaria para prestar nuestros servicios."
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="79dp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#91D08C"
+            android:text="VOLVER"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="646dp"
+            android:layout_below="@id/txtView02"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

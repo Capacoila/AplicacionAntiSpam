@@ -110,7 +110,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         app:srcCompat="@drawable/app"
-        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteX="49dp"
         tools:layout_editor_absoluteY="391dp" />
 
     <ImageView

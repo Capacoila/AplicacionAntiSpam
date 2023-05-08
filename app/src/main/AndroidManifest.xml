@@ -12,6 +12,33 @@
         android:theme="@style/Theme.AplicacionAntiSpam"
         tools:targetApi="31">
         <activity
+            android:name=".Crearperfilfacebook"
+            android:exported="false" />
+        <activity
+            android:name=".Crearperfilgoogle"
+            android:exported="false" />
+        <activity
+            android:name=".NumeroConfidencial"
+            android:exported="false" />
+        <activity
+            android:name=".PermisosInnesesarios"
+            android:exported="false" />
+        <activity
+            android:name=".AsesoramientoBlock"
+            android:exported="false" />
+        <activity
+            android:name=".ComoUsoDatos"
+            android:exported="false" />
+        <activity
+            android:name=".UsodeDatos"
+            android:exported="false" />
+        <activity
+            android:name=".Comenzar"
+            android:exported="false" />
+        <activity
+            android:name=".SplashBienvenida"
+            android:exported="false" />
+        <activity
             android:name=".registrardatos"
             android:exported="false" />
         <activity

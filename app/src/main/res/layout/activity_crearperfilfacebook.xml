@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Crearperfilfacebook"
+    android:layout_margin="15dp">
+
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_marginTop="145dp"
+        android:text="Continuar como Jose Sanchez"
+        android:backgroundTint="#8FBCF9"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button5"
+        android:text="Cancelar"
+        android:backgroundTint="#D9D9D9"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="Si continuas, Block tendrá acceso continua a la informacion que compartas y Facebook registrará cuando Block acceda a ella." />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="249dp">
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Block solicita acceso a:"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Tu nombre, foto de perfil y direccion de correo electrónico"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/textView10"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="380dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/relativeLayout0"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="229dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Jose Sanchez \n jsanchez@gmail.com"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@id/textView1"
+            android:src="@drawable/usuariodeperfil_azul" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
