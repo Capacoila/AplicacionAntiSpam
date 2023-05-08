@@ -66,7 +66,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@drawable/style1"
             android:padding="16dp"
             android:layout_marginTop="40dp"
 
@@ -107,16 +106,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/textViewNoPllamadas"
                     android:text="No Permitir"
                     android:textSize="24sp"
                     android:padding="16sp"
                     android:textColor="@color/black"
                     android:layout_marginEnd="50dp"
-                    android:onClick="onNoPermitirClick"/>
+                    android:onClick="onPermitirClick"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/textViewPllamadas"
                     android:onClick="onPermitirClick"
                     android:padding="12dp"
                     android:text="Permitir"

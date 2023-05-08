@@ -66,7 +66,6 @@
             android:layout_width="match_parent"
             android:layout_height="430dp"
             android:layout_marginTop="40dp"
-            android:background="@drawable/style1"
             android:padding="16dp">
 
             <ImageView
@@ -126,15 +125,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="50dp"
-                    android:onClick="onNoPermitirClick"
+                    android:id="@+id/txtNoPermitir"
+                    android:onClick="onPermitirClick"
                     android:padding="16sp"
-                    android:text="No Permitir"
+                    android:text="Cancelar"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/txtPermitir"
                     android:onClick="onPermitirClick"
                     android:padding="12dp"
                     android:text="Permitir"
