@@ -1,9 +1,8 @@
-sed -i 's/ \{1,\}/\t/g' categoriatest.tsv
-nospam	925568985     general
-nospam	954202658     encuesta
-spam	909107568     encuesta
-spam	909107569     general
-nospam	922696721     general
-spam	909107580     general
-nospam	922678852     general
-nospam	954103527     general
+nospam	925568985	general
+nospam	954202658	encuesta
+spam	909107568	encuesta
+spam	909107569	general
+nospam	922696721	general
+spam	909107580	general
+nospam	922678852	general
+nospam	954103527	general
