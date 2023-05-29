@@ -7,3 +7,4 @@ spam	909107580     general
 nospam	922678852     general
 nospam	954103527     general
 
+sed -i 's/ \{1,\}/\t/g' categoriatest.tsv
