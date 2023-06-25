@@ -63,3 +63,16 @@ def train_llamada_model():
         pickle.dump((vectorizer, clf), file)
 
     return classification_accuracy
+
+def load_test_data():
+    # Cargar los datos de prueba para mensajes
+    mensaje_data = pd.read_csv("https://raw.githubusercontent.com/Capacoila/AplicacionAntiSpam/master/sms_test.tsv", sep='\t', header=None, names=['clasificacion', 'categoria', 'mensaje'])
+    X_mensaje_test = mensaje_data['mensaje']
+    y_mensaje_true = mensaje_data['clasificacion']
+
+    # Cargar los datos de prueba para llamadas
+    llamada_data = pd.read_csv("https://raw.githubusercontent.com/Capacoila/AplicacionAntiSpam/master/Phone%20Number_test.tsv", delimiter="\t", header=None, names=['clasificacion', 'categoria', 'numero'])
+    X_llamada_test = llamada_data['numero']
+    y_llamada_true = llamada_data['clasificacion']
+
+    return (X_mensaje_test, y_mensaje_true), (X_llamada_test, y_llamada_true)
