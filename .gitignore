@@ -1,3 +1,21 @@
+<<<<<<< HEAD
 db.sqlite3
 venv
 __pycache__
+=======
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+>>>>>>> f7488ee06f1461caad30e1c6c7494ef32db38fb7
