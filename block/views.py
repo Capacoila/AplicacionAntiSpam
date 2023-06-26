@@ -3,6 +3,11 @@ import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 from django.contrib.postgres.fields import ArrayField
 from .training_utils import train_mensaje_model, train_llamada_model, get_categoria, get_precision
+from rest_framework import viewsets, permissions
+from .serializers import MensajeSerializer, LlamadaSerializer
+from .models import Mensaje, Llamada
+
+
 
 class Mensaje(models.Model):
     texto = models.CharField(max_length=200)

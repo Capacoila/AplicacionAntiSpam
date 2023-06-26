@@ -64,15 +64,30 @@ def train_llamada_model():
 
     return classification_accuracy
 
+import pandas as pd
+
 def load_test_data():
     # Cargar los datos de prueba para mensajes
-    mensaje_data = pd.read_csv("https://raw.githubusercontent.com/Capacoila/AplicacionAntiSpam/master/sms_test.tsv", sep='\t', header=None, names=['clasificacion', 'categoria', 'mensaje'])
+    mensaje_data = pd.read_csv("https://raw.githubusercontent.com/Capacoila/AplicacionAntiSpam/master/sms.tsv", sep='\t', header=None, names=['clasificacion', 'categoria', 'mensaje'])
     X_mensaje_test = mensaje_data['mensaje']
     y_mensaje_true = mensaje_data['clasificacion']
 
+
     # Cargar los datos de prueba para llamadas
-    llamada_data = pd.read_csv("https://raw.githubusercontent.com/Capacoila/AplicacionAntiSpam/master/Phone%20Number_test.tsv", delimiter="\t", header=None, names=['clasificacion', 'categoria', 'numero'])
+    llamada_data = pd.read_csv("https://raw.githubusercontent.com/Capacoila/AplicacionAntiSpam/master/Phone%20Number.tsv", delimiter="\t", header=None, names=['clasificacion', 'categoria', 'numero'])
     X_llamada_test = llamada_data['numero']
     y_llamada_true = llamada_data['clasificacion']
+    
 
-    return (X_mensaje_test, y_mensaje_true), (X_llamada_test, y_llamada_true)
+    return X_mensaje_test, y_mensaje_true, X_llamada_test, y_llamada_true, 
+
+def load_categorias_data():
+    # Cargar los datos de categorías para mensajes
+    mensaje_data = pd.read_csv("https://raw.githubusercontent.com/Capacoila/AplicacionAntiSpam/master/sms.tsv", sep='\t', header=None)
+    categorias_mensaje = mensaje_data[1].unique()  # La columna de categoría es la segunda columna (índice 1)
+
+    # Cargar los datos de categorías para llamadas
+    llamada_data = pd.read_csv("https://raw.githubusercontent.com/Capacoila/AplicacionAntiSpam/master/Phone%20Number.tsv", delimiter="\t", header=None)
+    categorias_llamada = llamada_data[1].unique()  # La columna de categoría es la segunda columna (índice 1)
+
+    return categorias_mensaje, categorias_llamada
